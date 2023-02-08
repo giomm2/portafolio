@@ -1,5 +1,5 @@
 function goToIndex() {
-    window.location.href = 'home.html';
+    window.location.href = './src/portafolio/home/home.html';
 }
 function changeInfo(text){
     let info = document.getElementById("info");
