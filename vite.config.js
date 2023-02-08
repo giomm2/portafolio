@@ -6,7 +6,7 @@ const root  = resolve(__dirname, './');
 const rootIndex  = resolve(__dirname, './src/portafolio');
 export default defineConfig({
     base: '/portafolio/',
-    build: {
+   /* build: {
         rollupOptions:{
             input: {
                 index: resolve(__dirname,'index.html'),
@@ -15,5 +15,5 @@ export default defineConfig({
                 home: resolve(rootHome, 'home.js'),
             }
         }
-    }
+    }*/
 });
