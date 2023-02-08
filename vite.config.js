@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { defineConfig, resolveBaseUrl } from 'vite';
 
-const rootHome  = resolve(__dirname, './src/portafolio');
+const rootHome  = resolve(__dirname, './src/portafolio/');
 const root  = resolve(__dirname, './');
 const rootIndex  = resolve(__dirname, './src/portafolio');
 export default defineConfig({
