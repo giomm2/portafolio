@@ -1,5 +1,5 @@
 import './src/portafolio/css/loading.css'
-import './src/portafolio/index.js'
 import './src/portafolio/css/style.css'
-import './src/portafolio/home.js'
-import './src/portafolio/anime.js'
+import './src/portafolio/index'
+import './src/portafolio/home'
+import './src/portafolio/anime'
