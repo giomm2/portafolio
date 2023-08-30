@@ -1,4 +1,74 @@
+//Menu responsive
+const iconResponsiveMenu = document.querySelector('#icon-responsive-menu');
+const  responsiveMenu = () => {
+  var menuItem = document.querySelector("#myTopnav");
+  if (menuItem.className === "topnav") {
+    menuItem.className += " responsive";
+  } else {
+    menuItem.className = "topnav";
+  }
+}
 
+iconResponsiveMenu.addEventListener('click', () => {
+  responsiveMenu();
+});
+
+//Menu actions
+const itemHome = document.querySelector('#item-home'),
+      itemSkills = document.querySelector('#item-skills'),
+      itemProjects = document.querySelector('#item-project'),
+      itemContact = document.querySelector('#item-contact');
+
+const menuFuntionalities = (idItem) =>{
+  itemHome.classList.remove('active');
+  itemSkills.classList.remove('active');
+  itemProjects.classList.remove('active');
+  itemContact.classList.remove('active');
+  idItem.classList.add('active');
+}
+
+itemHome.addEventListener('click', () => {
+  menuFuntionalities(itemHome);
+});
+itemSkills.addEventListener('click', () => {
+  menuFuntionalities(itemSkills);
+});
+itemProjects.addEventListener('click', () => {
+  menuFuntionalities(itemProjects);
+});
+itemContact.addEventListener('click', () => {
+  menuFuntionalities(itemContact);
+});
+
+
+//Skills actions
+
+const btnSkills = document.querySelector('#btn-skills'),
+  btnTools = document.querySelector('#btn-tools'),
+  divSkills = document.querySelector('#div-skills'),
+  divTools = document.querySelector('#div-tools');
+
+  const skillsFuntions = (divHide, divShow, btnActive, btnDisable) => {
+
+    btnActive.classList.add('skills-btn-active');
+    btnDisable.classList.remove('skills-btn-active');
+
+    btnActive.classList.remove('skills-btn');
+    btnDisable.classList.add('skills-btn');
+
+    divShow.style.display = 'block';
+    divHide.style.display ='none';
+  }
+
+  btnSkills.addEventListener('click', () => {
+    skillsFuntions(divTools, divSkills, btnSkills, btnTools);
+  });
+
+  btnTools.addEventListener('click', () => {
+    skillsFuntions(divSkills, divTools, btnTools, btnSkills);
+  });
+
+/* 
 const btnTech1 = document.querySelector('#tech1'),
   btnTech2 = document.querySelector('#tech2'),
   btnTech3 = document.querySelector('#tech3'),
@@ -117,3 +187,4 @@ const  menu = (current, div) => {
 
   menuTechnologies('languages', 'tech1');
   menu('experience','m1');
+ */
