@@ -208,7 +208,16 @@ body {
   padding-top: 5%;
 }
 
+.skills-toggle > div {
+  display: inline-block;
+}
 
+.skills-toggle {
+  margin: 0px auto;
+  width: 20%;
+  margin-bottom: 2%;
+  text-align: center;
+}
 
 .skill-img {
   display: block;
@@ -231,7 +240,7 @@ body {
 }
 
 .skills-btn-active {
-  background-color: #34495e;
+  background-color: #34495e !important;
   color: white;
   font-weight: bold;
   padding: 4% 4% 4% 4%;
@@ -251,7 +260,6 @@ body {
 }
 .container-skills
 {
-    text-align: center;
     margin: 0px auto;
     width: 40%;
     margin-bottom: 2%;
