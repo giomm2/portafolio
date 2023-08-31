@@ -3,6 +3,13 @@ body {
   overflow: auto;
 }
 
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
 .content {
   background-color: #e6e6e6 !important;
   overflow-x: hidden !important;
@@ -18,6 +25,7 @@ body {
   background-color: #34495e;
   padding: 1% 0px 1% 0%;
 }
+
 .items-menu-container{
   margin-left: 40%;
 }
@@ -90,10 +98,10 @@ body {
 .title-sections {
   display: none;
   text-align: center;
-  margin: 2% 40% 2% 0;
+  margin: 3% 40% 3% 0;
   color: #34495e;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .card-style {
@@ -152,7 +160,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .title-sections {
-    display: contents; 
+    display: contents;
+    margin: 3% 40% 3% 0; 
   }
 
   .card-style {
@@ -250,21 +259,33 @@ body {
 
 .container-skills > div
 {
-    display: inline-block;
-    background-color: white;
-    width: 20%;
-    border-radius: 5px;
-    padding: 2% 2% 2% 2%;
-    margin-left: 3%;
+  display: inline-block;
+  background-color: white;
+  width: 20%;
+  border-radius: 5px;
+  padding: 2% 2% 2% 2%;
+  margin-left: 3%;
     
 }
 .container-skills
 {
-    margin: 0px auto;
-    width: 40%;
-    margin-bottom: 2%;
+  margin: 0px auto;
+  width: 40%;
+  margin-bottom: 2%;
 }
 
 #div-tools {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .skill-img {
+    width: 90%;
+    height: 50%;
+  }
+
+  .container-skills {
+    width: 100%;
+    height: 60px;
+  }
 }
