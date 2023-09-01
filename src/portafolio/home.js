@@ -47,7 +47,7 @@ itemContact.addEventListener('click', () => {
 const btnDownload = document.querySelector('#btn-download');
 
 btnDownload.addEventListener('click', () => {
-  window.open = "https://1drv.ms/b/s!AsSMjUrLYm65n75X5t0Jx-V-WBODAA?e=RSOWsy";
+  window.open("https://1drv.ms/b/s!AsSMjUrLYm65n75X5t0Jx-V-WBODAA?e=RSOWsy");
 });
 
 //Skills actions
@@ -76,6 +76,21 @@ const btnSkills = document.querySelector('#btn-skills'),
   btnTools.addEventListener('click', () => {
     skillsFuntions(divSkills, divTools, btnTools, btnSkills);
   });
+
+
+  //Project actions
+
+  const btnBlackJack = document.querySelector('#blackjack-project');
+
+  btnBlackJack.addEventListener('click', () => {
+    window.open('https://giomm2.github.io/blackjack/');
+  });
+
+
+
+
+
+
 
 /* 
 const btnTech1 = document.querySelector('#tech1'),
