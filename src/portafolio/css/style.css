@@ -13,7 +13,7 @@ header {
 .content {
   background-color: #e6e6e6 !important;
   overflow-x: hidden !important;
-  padding: 3% 12% 0% 12%;
+  padding: 5% 12% 0% 12%;
 }
 
 /*-----------------------------------*\
@@ -95,6 +95,23 @@ header {
 /*-----------------------------------*\
  * #HOME
 \*-----------------------------------*/
+
+.about-txt-title {
+  color: #34495e;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-txt-content {
+  font-size: 20px;
+}
+
+.about-content {
+  margin-bottom: 3%;
+  margin-top: 10%;
+}
+
 .title-sections {
   display: none;
   text-align: center;
@@ -142,7 +159,7 @@ header {
   border-radius: 20px;
   width: 200px;
   text-align: center;
-  margin-left: 40%;
+  margin: auto;
   margin-bottom: 3%;
   font-weight: bold;
 }

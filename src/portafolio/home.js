@@ -41,6 +41,15 @@ itemContact.addEventListener('click', () => {
 });
 
 
+//Home actions
+
+
+const btnDownload = document.querySelector('#btn-download');
+
+btnDownload.addEventListener('click', () => {
+  window.open = "https://1drv.ms/b/s!AsSMjUrLYm65n75X5t0Jx-V-WBODAA?e=RSOWsy";
+});
+
 //Skills actions
 
 const btnSkills = document.querySelector('#btn-skills'),
