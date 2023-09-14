@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/portafolio/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Portafolio</title>
+    <title>Portfolio</title>
 </head>
 <header>
     <!-- MENU -->
@@ -15,7 +15,8 @@
             <a id="icon-responsive-menu" class="icon">
                 <i><img class="menu-icon" src="public/images/menuIcon.png"></i>
             </a>
-            <a id="item-home" class="active" href="#home">About</a>
+            <a id="item-home" class="active" href="#home">Home</a>
+            <a id="item-about"  href="#about">About</a>
             <a id="item-skills" href="#skills">Skills</a>
             <a id="item-project" href="#projects">Projects</a>
             <a id="item-contact" href="#contact">Contact</a>
@@ -25,8 +26,20 @@
 <body>
     <div class="content">
         <!-- HOME -->
-        <section id="home">
-            <div class="col-md-12 row about-content">
+        <section id="home" class="home-content">
+            <div>
+                <p class="home-title">Hello! I’m Giovanny </p> 
+                <p class="home-subtitle">SOFTWARE ENGINEER </p>
+                <svg class="arrows">
+                    <path class="a1" d="M0 0 L30 32 L60 0"></path>
+                    <path class="a2" d="M0 20 L30 52 L60 20"></path>
+                    <path class="a3" d="M0 40 L30 72 L60 40"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about" class="about-content">
+            <div class="col-md-12 row ">
                 <div class="col-md-4">
                     <p class="about-txt-title">About me.</p><br>
                     <div class="col-md-12">
@@ -36,9 +49,8 @@
                     </div>  
                 </div>
                 <div class="col-md-8">
-                    <p class="about-txt-content">Hi! I’m Giovanny Morales, and I’m a developer who has passion for building clean web applications with intuitive functionalities. 
-                        I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, 
-                        and concepts.
+                    <p class="about-txt-content">Hello! I’m Giovanny Morales and I’m an experienced Software Engineer. Strong engineering professional with a bachelor’s 
+                        degree focused in Computer Software Engineering.
                     </p>
                 </div>
             </div>
@@ -51,8 +63,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <p class="card-title"> 1 year </p>
-                                    <p class="card-content">Pernix Solutions</p>
+                                    <p class="card-title"> 4 </p>
+                                    <p class="card-content">Years of experience</p>
                                 </div>                        
                             </div>
                         </div>
@@ -62,12 +74,12 @@
                     <div class="card-style">
                         <div class="row col-md-12">
                             <div class="col-md-6">
-                                <img class="card-img" src="public/images/job.png">
+                                <img class="card-img" src="public/images/company.png">
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <p class="card-title"> 1+ year </p>
-                                    <p class="card-content">Grant Thornton CR</p>
+                                    <p class="card-title"> 3 </p>
+                                    <p class="card-content">Total companies</p>
                                 </div>                        
                             </div>
                         </div>
@@ -77,12 +89,12 @@
                     <div class="card-style">
                         <div class="row col-md-12">
                             <div class="col-md-6">
-                                <img class="card-img" src="public/images/job.png">
+                                <img class="card-img" src="public/images/projects.png">
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <p class="card-title"> 3+ years Actual </p>
-                                    <p class="card-content">SOIN</p>
+                                    <p class="card-title"> 4 </p>
+                                    <p class="card-content">Projects worked</p>
                                 </div>                        
                             </div>
                         </div>
@@ -91,11 +103,13 @@
             </div> 
         </section>       
         <!-- SKILLS -->
-        <section id="skills">
-            <div class="row col-md-12 skills-content">
+        <section id="skills" class="skills-content">
+            <div class="row col-md-12">
                 <div class="col-md-6" >
                     <p class="skills-left-title">What My Programming Skills Included?</p>
-                    <p class="skills-left-content">Experienced Software Engineer. Strong engineering professional with a bachelor’s degree focused in Computer Software Engineering from Universidad Latina de Costa Rica.</p>
+                    <p class="skills-left-content">I’m a developer who has passion for building clean web applications with intuitive functionalities. 
+                        I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, 
+                        and concepts.</p>
                     <div class="skills-toggle">
                         <div class="col-md-6 skills-btn-active" id="btn-skills">Skills</div>
                         <div class="col-md-6 skills-btn" id="btn-tools">Tools</div>
@@ -127,8 +141,8 @@
             </div>
         </section>
         <!-- PROJECTS -->
-        <section id="projects">
-            <div class="projects-content">
+        <section id="projects" class="projects-content">
+            <div class="">
                 <div>
                     <p class="projects-txt-title">See My Works Which Will Amaze You!</p>
                     <p class="projects-txt-content">We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients. </p>
@@ -175,8 +189,8 @@
             </div>
         </section>
         <!-- CONTACT -->
-        <section id="contact">
-            <div class="contact-content">
+        <section id="contact" class="contact-content">
+            <div class="">
                 <div>
                     <p class="contact-txt-title">Contact me!</p>
                     <p class="contact-txt-content">Click below</p>

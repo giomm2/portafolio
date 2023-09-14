@@ -10,7 +10,7 @@ html, body {
     height: 2px;
     width: 75%;
     margin: 0 auto;
-    background: #34495e;
+    background: #3b5977;
     margin-top: 150px;
     top:30%;
     bottom: 50%;
@@ -23,7 +23,7 @@ html, body {
     height: 60px;
     width: 60px;
     left: 0;
-    background: #34495e;
+    background: #3b5977;
     border-radius: 30%;
     animation: move 5s infinite;
   }

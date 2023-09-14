@@ -18,6 +18,7 @@ iconResponsiveMenu.addEventListener('click', () => {
 //Menu actions
 
 const itemHome = document.querySelector('#item-home'),
+      itemAbout = document.querySelector('#item-about'),
       itemSkills = document.querySelector('#item-skills'),
       itemProjects = document.querySelector('#item-project'),
       itemContact = document.querySelector('#item-contact');
@@ -27,11 +28,15 @@ const menuFuntionalities = (idItem) =>{
   itemSkills.classList.remove('active');
   itemProjects.classList.remove('active');
   itemContact.classList.remove('active');
+  itemAbout.classList.remove('active');
   idItem.classList.add('active');
 }
 
 itemHome.addEventListener('click', () => {
   menuFuntionalities(itemHome);
+});
+itemAbout.addEventListener('click', () => {
+  menuFuntionalities(itemAbout);
 });
 itemSkills.addEventListener('click', () => {
   menuFuntionalities(itemSkills);

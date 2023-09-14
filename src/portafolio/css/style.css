@@ -13,7 +13,7 @@ header {
 .content {
   background-color: #e6e6e6 !important;
   overflow-x: hidden !important;
-  padding: 5% 12% 0% 12%;
+  margin: 2% 12% 0% 12%;
 }
 
 /*-----------------------------------*\
@@ -22,8 +22,8 @@ header {
 .topnav {
   overflow: hidden;
   color: white;
-  background-color: #34495e;
-  padding: 1% 0px 1% 0%;
+  background-color: #3b5977;
+  padding: 0% 0px 0% 0%;
 }
 
 .items-menu-container{
@@ -47,7 +47,7 @@ header {
 
 .topnav a.active {
   background-color: white;
-  color: #34495e;
+  color: #3b5977;
   font-weight: bold;
   border-radius: 10px;
 }
@@ -91,32 +91,106 @@ header {
     margin-left: 0%;
   }
 }
+/*-----------------------------------*\
+ * #SECTIONS
+\*-----------------------------------*/
+
+.about-content, .skills-content, .projects-content, .contact-content {
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+
+.home-content {
+  padding-bottom: 30%;
+  padding-top: 15%;
+}
 
 /*-----------------------------------*\
  * #HOME
 \*-----------------------------------*/
 
+.home-title {
+  color: #2e929b;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+}
+.home-subtitle {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: darkgray;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: relative;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+  margin-top: 10%;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari and Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari and Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari and Chrome */
+}
+
+/*-----------------------------------*\
+ * #ABOUT
+\*-----------------------------------*/
+
 .about-txt-title {
-  color: #34495e;
+  color: #2e929b;
   font-weight: bold;
   font-size: 50px;
   text-align: center;
 }
 
 .about-txt-content {
-  font-size: 20px;
-}
-
-.about-content {
-  margin-bottom: 3%;
-  margin-top: 10%;
+  font-size: 22px;
 }
 
 .title-sections {
   display: none;
   text-align: center;
   margin: 3% 40% 3% 0;
-  color: #34495e;
+  color: #3b5977;
   font-weight: bold;
   font-size: 30px;
 }
@@ -127,7 +201,7 @@ header {
   border-radius: 17px;
   height: 150px;
   background-color: white;
-  color: #34495e;
+  color: #3b5977;
   padding: 10px 10px 15px 10px;
 }
 
@@ -152,7 +226,7 @@ header {
 }
 
 .btn-download {
-  color: #34495e;
+  color: #3b5977;
   background-color: white;
   font-size: 20px;
   padding: 10px 5px 5px 5px;
@@ -165,7 +239,7 @@ header {
 }
 
 .btn-download:hover {
-  background-color: #34495e;
+  background-color: #3b5977;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -219,15 +293,14 @@ header {
  * #SKILLS
 \*-----------------------------------*/
 
-.skills-content {
-  padding-top: 10%;
-  font-size: 20px;
-}
-
 .skills-left-title {
-  color: #34495e;
+  color: #2e929b;
   font-weight: bold;
   font-size: 50px;
+}
+
+.skills-left-content {
+  font-size: 22px;
 }
 
 .skills-right {
@@ -253,7 +326,7 @@ header {
 }
 
 .skills-btn {
-  color: #34495e;
+  color: #3b5977;
   font-weight: bold;
   padding: 4% 4% 4% 4%;
   background-color: white;
@@ -263,11 +336,11 @@ header {
 
 .skills-btn:hover {
   color: white;
-  background-color: #34495e;
+  background-color: #3b5977;
 }
 
 .skills-btn-active {
-  background-color: #34495e !important;
+  background-color: #3b5977 !important;
   color: white;
   font-weight: bold;
   padding: 4% 4% 4% 4%;
@@ -309,22 +382,18 @@ header {
 }
 
 /*-----------------------------------*\
- * #SKILLS
+ * #PROJECTS
 \*-----------------------------------*/
 
-.projects-content {
-  margin-top: 10%;
-}
-
 .projects-txt-title {
-  color: #34495e;
+  color: #2e929b;
   font-weight: bold;
   font-size: 50px;
   text-align: center;
 }
 
 .projects-txt-content {
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -349,7 +418,7 @@ header {
 }
 
 .project-card .title {
-  color: #34495e;
+  color: #3b5977;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
@@ -364,13 +433,8 @@ header {
  * #CONTACT
 \*-----------------------------------*/
 
-.contact-content {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-
 .contact-txt-title {
-  color: #34495e;
+  color: #2e929b;
   font-weight: bold;
   font-size: 50px;
   text-align: center;
