@@ -95,14 +95,9 @@ header {
  * #SECTIONS
 \*-----------------------------------*/
 
-.about-content, .skills-content, .projects-content, .contact-content {
-  padding-bottom: 150px;
-  padding-top: 50px;
-}
-
-.home-content {
-  padding-bottom: 30%;
-  padding-top: 15%;
+.home-content,.about-content, .skills-content, .projects-content, .contact-content {
+  height: 100vh;
+  padding: 10% 0 10% 0;
 }
 
 /*-----------------------------------*\

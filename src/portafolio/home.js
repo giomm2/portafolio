@@ -32,21 +32,21 @@ const menuFuntionalities = (idItem) =>{
   idItem.classList.add('active');
 }
 
-itemHome.addEventListener('click', () => {
-  menuFuntionalities(itemHome);
-});
-itemAbout.addEventListener('click', () => {
-  menuFuntionalities(itemAbout);
-});
-itemSkills.addEventListener('click', () => {
-  menuFuntionalities(itemSkills);
-});
-itemProjects.addEventListener('click', () => {
-  menuFuntionalities(itemProjects);
-});
-itemContact.addEventListener('click', () => {
-  menuFuntionalities(itemContact);
-});
+// itemHome.addEventListener('click', () => {
+//   menuFuntionalities(itemHome);
+// });
+// itemAbout.addEventListener('click', () => {
+//   menuFuntionalities(itemAbout);
+// });
+// itemSkills.addEventListener('click', () => {
+//   menuFuntionalities(itemSkills);
+// });
+// itemProjects.addEventListener('click', () => {
+//   menuFuntionalities(itemProjects);
+// });
+// itemContact.addEventListener('click', () => {
+//   menuFuntionalities(itemContact);
+// });
 
 
 //Home actions
@@ -112,3 +112,57 @@ const btnSkills = document.querySelector('#btn-skills'),
   btnGit.addEventListener('click', () => {
     window.open('https://github.com/giomm2');
   });
+
+
+
+
+
+  const scrollHandler = () => {
+
+    let menu = document.querySelector('.items-menu-container');
+
+    const homeContent = document.querySelector('.home-content'),
+     aboutContent = document.querySelector('.about-content'),
+     skillsContent = document.querySelector('.skills-content'),
+     projectsContent = document.querySelector('.projects-content'),
+     contactContent = document.querySelector('.contact-content');
+  
+    const homeItem = document.querySelector('#item-home'),
+      aboutItem = document.querySelector('#item-about'),
+      skillsItem = document.querySelector('#item-skills'),
+      projectItem = document.querySelector('#item-project'),
+      contactItem = document.querySelector('#item-contact');
+
+    let pos_menu = window.scrollY + menu.offsetHeight;
+
+    let pos_home = homeContent.offsetTop + homeContent.offsetHeight;
+    let pos_about = aboutContent.offsetTop + aboutContent.offsetHeight;
+    let pos_skills = skillsContent.offsetTop + skillsContent.offsetHeight;
+    let pos_project = projectsContent.offsetTop + projectsContent.offsetHeight;
+    let pos_contact = contactContent.offsetTop + contactContent.offsetHeight;
+
+    let distance_home = pos_home - pos_menu;
+    let distance_about = pos_about - pos_menu;
+    let distance_skills = pos_skills - pos_menu;
+    let distance_project = pos_project - pos_menu;
+    let distance_contact = pos_contact - pos_menu;
+
+    console.log({distance_home}, {distance_about},{distance_skills},{distance_project},{distance_contact});
+
+    let min = Math.min(...[distance_home, distance_about, distance_skills,distance_project,distance_contact].filter(num => num > 0));
+    console.log(min);
+    homeItem.classList.remove('active');
+    skillsItem.classList.remove('active');
+    aboutItem.classList.remove('active');
+    projectItem.classList.remove('active');
+    contactItem.classList.remove('active');
+    
+    if(min === distance_home) homeItem.classList.add('active');
+    if(min === distance_about) aboutItem.classList.add('active');
+    if(min === distance_skills) skillsItem.classList.add('active');
+    if(min === distance_project) projectItem.classList.add('active');
+    if(min === distance_contact) contactItem.classList.add('active');
+
+}
+
+window.addEventListener('scroll', scrollHandler);
