@@ -167,7 +167,7 @@ header {
 
 @media screen and (max-width: 600px) {
   .home-title {
-    font-size: 70px;
+    font-size: 65px;
   }
 }
 
@@ -380,7 +380,7 @@ header {
   }
 
   .skills-left-title {
-    font-size: 48px;
+    font-size: 45px;
   }
 }
 
