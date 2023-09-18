@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/portafolio/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <header>
@@ -55,7 +56,7 @@
                 </div>
             </div>
             <div class="row col-md-12">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">
                     <div class="card-style">
                         <div class="row col-md-12">
                             <div class="col-md-6">
@@ -63,14 +64,14 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <p class="card-title"> 4 </p>
+                                    <p class="card-title"> 6 </p>
                                     <p class="card-content">Years of experience</p>
                                 </div>                        
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">
                     <div class="card-style">
                         <div class="row col-md-12">
                             <div class="col-md-6">
@@ -85,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="linear">
                     <div class="card-style">
                         <div class="row col-md-12">
                             <div class="col-md-6">
@@ -93,7 +94,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div>
-                                    <p class="card-title"> 4 </p>
+                                    <p class="card-title"> 5 </p>
                                     <p class="card-content">Projects worked</p>
                                 </div>                        
                             </div>
@@ -120,23 +121,24 @@
                         <div title="Javascript"><img class="skill-img" src="public/images/javascript.png"></div>
                         <div title="CSS3"><img class="skill-img" src="public/images/css3.png"></div>
                         <div title="HTML 5"><img class="skill-img" src="public/images/html5.png"></div>
-                        <div title="SQLServer"><img class="skill-img" src="public/images/sqlserver.png"></div>
+                        <div title="React"><img class="skill-img" src="public/images/react.png"></div>
+                    </div>
+                    <div class="container-skills">                   
+                        <div title="JQuery"><img class="skill-img" src="public/images/jquery.png"></div>
+                        <div title="Bootstrap"><img class="skill-img" src="public/images/bootstrap.png"></div>
+                        <div title="C#"><img class="skill-img" src="public/images/csharp.png"></div>                   
+                    </div>
                 </div>
-                <div class="container-skills">
-                    <div title="C#"><img class="skill-img" src="public/images/csharp.png"></div>
-                    <div title="JQuery"><img class="skill-img" src="public/images/jquery.png"></div>
-                    <div title="Bootstrap"><img class="skill-img" src="public/images/bootstrap.png"></div>
-                    <div title="Oracle"><img class="skill-img" src="public/images/oracle.png"></div>
-                </div>
-            </div>
             <div class="col-md-6 skills-right" id="div-tools">
                 <div class="container-skills">
                     <div title="Command line"><img class="skill-img" src="public/images/command.png"></div>
-                    <div title="Git"><img class="skill-img" src="public/images/git.png"></div>                    
+                    <div title="Git"><img class="skill-img" src="public/images/git.png"></div>
+                    <div title="Oracle"><img class="skill-img" src="public/images/oracle.png"></div>                    
                 </div>
                 <div class="container-skills">
                     <div title="VS Code"><img class="skill-img" src="public/images/vs-code.png"></div>
                     <div title="Visual Studio"><img class="skill-img" src="public/images/vstudio.png"></div>
+                    <div title="SQLServer"><img class="skill-img" src="public/images/sqlserver.png"></div>
                 </div>
             </div>
         </section>
@@ -147,7 +149,7 @@
                     <p class="projects-txt-title">See My Works Which Will Amaze You!</p>
                     <p class="projects-txt-content">We develop the best quality website that serves for the long-term. Well-documented, clean, easy and elegant interface helps any non-technical clients. </p>
                 </div>
-                <div class="project-card" id="blackjack-project"> 
+                <div class="project-card" id="blackjack-project"  data-aos="zoom-in-right" data-aos-duration="3000"> 
                     <div class="col-md-12 row">
                          <div class="col-md-4">
                             <img class="img" src="public/images/blackjack.png">
@@ -160,7 +162,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" id=""> 
+                <div class="project-card" id="" data-aos="zoom-in-left" data-aos-duration="3000"> 
                     <div class="col-md-12 row">
                          <div class="col-md-4">
                             <img class="img" src="public/images/blackjack.png">
@@ -173,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" id=""> 
+                <div class="project-card" id="" data-aos="zoom-in-right" data-aos-duration="3000"> 
                     <div class="col-md-12 row">
                          <div class="col-md-4">
                             <img class="img" src="public/images/blackjack.png">
@@ -196,19 +198,19 @@
                     <p class="contact-txt-content">Click below</p>
                 </div>
                 <div class="col-md-12 row">
-                    <div class="col-md-3" id="github">
+                    <div class="col-md-3" id="github" data-aos="zoom-out" data-aos-duration="3000">
                         <img class="img-contact" src="public/images/github.png">
                         <p class="contact-txt-content">Github</p>
                     </div>
-                    <div class="col-md-3" id="mail">
+                    <div class="col-md-3" id="mail" data-aos="zoom-out" data-aos-duration="3000">
                         <img class="img-contact" src="public/images/mail.png">
                         <p class="contact-txt-content">Mail</p>
                     </div>
-                    <div class="col-md-3" id="ln">
+                    <div class="col-md-3" id="ln" data-aos="zoom-out" data-aos-duration="3000">
                         <img class="img-contact" src="public/images/ln.png">
                         <p class="contact-txt-content">Linkedln</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="zoom-out" data-aos-duration="3000">
                         <img class="img-contact" src="public/images/phone.png">
                         <p class="contact-txt-content">(+506) 62058911</p>
                     </div>
@@ -218,5 +220,7 @@
         </section>
     </div>
     <script type="module" src="/src/portafolio/home.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
 </body>
 </html>

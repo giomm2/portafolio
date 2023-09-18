@@ -14,41 +14,6 @@ iconResponsiveMenu.addEventListener('click', () => {
   responsiveMenu();
 });
 
-
-//Menu actions
-
-const itemHome = document.querySelector('#item-home'),
-      itemAbout = document.querySelector('#item-about'),
-      itemSkills = document.querySelector('#item-skills'),
-      itemProjects = document.querySelector('#item-project'),
-      itemContact = document.querySelector('#item-contact');
-
-const menuFuntionalities = (idItem) =>{
-  itemHome.classList.remove('active');
-  itemSkills.classList.remove('active');
-  itemProjects.classList.remove('active');
-  itemContact.classList.remove('active');
-  itemAbout.classList.remove('active');
-  idItem.classList.add('active');
-}
-
-// itemHome.addEventListener('click', () => {
-//   menuFuntionalities(itemHome);
-// });
-// itemAbout.addEventListener('click', () => {
-//   menuFuntionalities(itemAbout);
-// });
-// itemSkills.addEventListener('click', () => {
-//   menuFuntionalities(itemSkills);
-// });
-// itemProjects.addEventListener('click', () => {
-//   menuFuntionalities(itemProjects);
-// });
-// itemContact.addEventListener('click', () => {
-//   menuFuntionalities(itemContact);
-// });
-
-
 //Home actions
 
 const btnDownload = document.querySelector('#btn-download');
@@ -147,10 +112,8 @@ const btnSkills = document.querySelector('#btn-skills'),
     let distance_project = pos_project - pos_menu;
     let distance_contact = pos_contact - pos_menu;
 
-    console.log({distance_home}, {distance_about},{distance_skills},{distance_project},{distance_contact});
-
     let min = Math.min(...[distance_home, distance_about, distance_skills,distance_project,distance_contact].filter(num => num > 0));
-    console.log(min);
+  
     homeItem.classList.remove('active');
     skillsItem.classList.remove('active');
     aboutItem.classList.remove('active');
