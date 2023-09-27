@@ -23,7 +23,6 @@ header {
   overflow: hidden;
   color: white;
   background-color: #3b5977;
-  padding: 0% 0px 0% 0%;
 }
 
 .items-menu-container{
@@ -37,7 +36,7 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .topnav a:hover {
@@ -106,12 +105,12 @@ header {
 .home-title {
   color: #2e929b;
   text-align: center;
-  font-size: 100px;
+  font-size: 4.4rem;
   font-weight: bold;
 }
 .home-subtitle {
   text-align: center;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: bold;
   color: darkgray;
 }
@@ -165,12 +164,6 @@ header {
 	-webkit-animation-delay:0s; /* Safari and Chrome */
 }
 
-@media screen and (max-width: 600px) {
-  .home-title {
-    font-size: 65px;
-  }
-}
-
 /*-----------------------------------*\
  * #ABOUT
 \*-----------------------------------*/
@@ -178,21 +171,13 @@ header {
 .about-txt-title {
   color: #2e929b;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
 }
 
 .about-txt-content {
-  font-size: 22px;
-}
-
-.title-sections {
-  display: none;
+  font-size: 1.5rem;
   text-align: center;
-  margin: 3% 40% 3% 0;
-  color: #3b5977;
-  font-weight: bold;
-  font-size: 30px;
 }
 
 .card-style {
@@ -212,7 +197,7 @@ header {
 .card-title {
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .card-img {
@@ -222,69 +207,37 @@ header {
 
 .card-content {
   text-align: center;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .btn-download {
   color: #3b5977;
   background-color: white;
-  font-size: 20px;
-  padding: 10px 5px 5px 5px;
-  border-radius: 20px;
+  font-size: 1.3rem;
+  padding: 1% 1% 1% 1%;
+  border-radius: 15px;
+  border-color: #3b5977;
   width: 200px;
   text-align: center;
-  margin: auto;
-  margin-bottom: 3%;
   font-weight: bold;
+  display: block;
+  margin: 0 auto 3% auto;
 }
 
 .btn-download:hover {
   background-color: #3b5977;
   color: white;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.img-code {
-  margin: 0% 0 0% -3%;
 }
 
 @media screen and (max-width: 600px) {
-  .title-sections {
-    display: contents;
-    margin: 3% 4% 3% 0 !important; 
-  }
-
   .card-style {
-    width: 80%;
-    height: 100px;
-    margin-bottom: 5%;
-    padding: 0px 0px 0px 0px;
+    margin-bottom: 5%;  
   }
 
-  .card-title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin-top: 0%;
-  }
-
-  .card-content {
-    text-align: center;
-    font-size: 15px;
-  }
   .card-img {
-    height: 40px;
-    width: 60px !important;    
-  }
-
-  .btn-download {
-    margin-left: 16% !important;
-  }
-
-  .img-code {
-    margin: 0% 0 0% -10%;
-    width: 118%;
+    height: 50px;
+    width: 50px !important;    
   }
 }
 
@@ -295,11 +248,13 @@ header {
 .skills-left-title {
   color: #2e929b;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .skills-left-content {
-  font-size: 22px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .skills-right {
@@ -307,13 +262,9 @@ header {
   margin-bottom: 5%;
 }
 
-.skills-toggle > div {
-  display: inline-block;
-}
-
 .skills-toggle {
   margin: 0px auto;
-  width: 20%;
+  width: 25%;
   margin-bottom: 2%;
   text-align: center;
 }
@@ -329,8 +280,10 @@ header {
   font-weight: bold;
   padding: 4% 4% 4% 4%;
   background-color: white;
-  border-radius: 5px;
+  border-color: #3b5977;
+  border-radius: 15px;
   cursor: pointer;
+  margin-bottom: 2%;
 }
 
 .skills-btn:hover {
@@ -343,25 +296,25 @@ header {
   color: white;
   font-weight: bold;
   padding: 4% 4% 4% 4%;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  margin-bottom: 2%;
 }
 
 .container-skills > div
 {
   display: inline-block;
   background-color: white;
-  width: 20%;
+  width: 25%;
   border-radius: 5px;
   padding: 2% 2% 2% 2%;
   margin-left: 3%;
-    
 }
 .container-skills
 {
   margin: 0px auto;
   width: 40%;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
 }
 
 #div-tools {
@@ -377,10 +330,7 @@ header {
   .container-skills {
     width: 100%;
     height: 60px;
-  }
-
-  .skills-left-title {
-    font-size: 45px;
+    margin-bottom: 6%;
   }
 }
 
@@ -391,12 +341,12 @@ header {
 .projects-txt-title {
   color: #2e929b;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
 }
 
 .projects-txt-content {
-  font-size: 22px;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 5%;
 }
@@ -410,7 +360,6 @@ header {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
   cursor: pointer;
 }
 
@@ -423,12 +372,12 @@ header {
 .project-card .title {
   color: #3b5977;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .project-card .description {
-  font-size: 15px;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -439,14 +388,15 @@ header {
 .contact-txt-title {
   color: #2e929b;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
 }
 
 .contact-txt-content {
-  font-size: 20px;
+  font-size: 1.5rem;
   text-align: center;
   margin-bottom: 15%;
+  text-decoration: none;
 }
 
 .img-contact {

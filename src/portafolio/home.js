@@ -63,7 +63,9 @@ btnBlackJack.addEventListener('click', () => {
 
 const btnLn = document.querySelector('#ln'),
   btnMail = document.querySelector('#mail'),
-  btnGit = document.querySelector('#github');
+  btnGit = document.querySelector('#github'),
+  btnCall = document.querySelector('#call'),
+  callText = document.querySelector('#contact-call');
 
 btnLn.addEventListener('click', () => {
   window.open('https://www.linkedin.com/in/giovanny-morales-218961101/');
@@ -75,6 +77,10 @@ btnMail.addEventListener('click', () => {
 
 btnGit.addEventListener('click', () => {
   window.open('https://github.com/giomm2');
+});
+
+btnCall.addEventListener('click', () => {
+  callText.innerHTML = '(+506)62058911';
 });
 
 //Scrollspy

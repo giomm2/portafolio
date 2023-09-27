@@ -12,7 +12,7 @@
 <header>
     <!-- MENU -->
     <div class="topnav" id="myTopnav">
-        <div class="items-menu-container">
+        <nav class="items-menu-container">
             <a id="icon-responsive-menu" class="icon">
                 <i><img class="menu-icon" src="public/images/menuIcon.png"></i>
             </a>
@@ -21,7 +21,7 @@
             <a id="item-skills" href="#skills">Skills</a>
             <a id="item-project" href="#projects">Projects</a>
             <a id="item-contact" href="#contact">Contact</a>
-        </div>
+        </nav>
     </div>
 </header>
 <body>
@@ -42,11 +42,9 @@
         <section id="about" class="about-content">
             <div class="col-md-12 row ">
                 <div class="col-md-4">
-                    <p class="about-txt-title">About me.</p><br>
+                    <p class="about-txt-title">About me</p><br>
                     <div class="col-md-12">
-                        <div class="btn-download" id="btn-download">
-                            <p class="btn-download-content">Download CV</p>
-                        </div>
+                        <button class="btn-download" id="btn-download">Download CV</button>
                     </div>  
                 </div>
                 <div class="col-md-8">
@@ -112,21 +110,21 @@
                         I enjoy the process of turning ideas into reality using creative solutions. I’m always curious about learning new skills, tools, 
                         and concepts.</p>
                     <div class="skills-toggle">
-                        <div class="col-md-6 skills-btn-active" id="btn-skills">Skills</div>
-                        <div class="col-md-6 skills-btn" id="btn-tools">Tools</div>
+                        <button class="col-md-6 skills-btn-active" id="btn-skills">Skills</button>
+                        <button class="col-md-6 skills-btn" id="btn-tools">Tools</button>
                     </div>
                 </div>
                 <div class="col-md-6 skills-right" id="div-skills">
                     <div class="container-skills">
                         <div title="Javascript"><img class="skill-img" src="public/images/javascript.png"></div>
                         <div title="CSS3"><img class="skill-img" src="public/images/css3.png"></div>
-                        <div title="HTML 5"><img class="skill-img" src="public/images/html5.png"></div>
-                        <div title="React"><img class="skill-img" src="public/images/react.png"></div>
+                        <div title="HTML 5"><img class="skill-img" src="public/images/html5.png"></div>                       
                     </div>
                     <div class="container-skills">                   
                         <div title="JQuery"><img class="skill-img" src="public/images/jquery.png"></div>
                         <div title="Bootstrap"><img class="skill-img" src="public/images/bootstrap.png"></div>
-                        <div title="C#"><img class="skill-img" src="public/images/csharp.png"></div>                   
+                        <div title="C#"><img class="skill-img" src="public/images/csharp.png"></div>
+                        <div title="React"><img class="skill-img" src="public/images/react.png"></div>                   
                     </div>
                 </div>
             <div class="col-md-6 skills-right" id="div-tools">
@@ -210,9 +208,9 @@
                         <img class="img-contact" src="public/images/ln.png">
                         <p class="contact-txt-content">Linkedln</p>
                     </div>
-                    <div class="col-md-3" data-aos="zoom-out" data-aos-duration="3000">
+                    <div class="col-md-3" id="call" data-aos="zoom-out" data-aos-duration="3000">
                         <img class="img-contact" src="public/images/phone.png">
-                        <p class="contact-txt-content">(+506) 62058911</p>
+                        <p class="contact-txt-content" id="contact-call">Phone</p>
                     </div>
 
                 </div>
