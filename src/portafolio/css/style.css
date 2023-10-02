@@ -177,7 +177,6 @@ header {
 
 .about-txt-content {
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .card-style {
@@ -254,7 +253,6 @@ header {
 
 .skills-left-content {
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .skills-right {
@@ -379,6 +377,11 @@ header {
 .project-card .description {
   font-size: 1rem;
   text-align: center;
+}
+
+.skill-img-project{
+  margin: auto;
+  display: block;
 }
 
 /*-----------------------------------*\

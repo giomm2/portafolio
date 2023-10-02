@@ -19,7 +19,7 @@ iconResponsiveMenu.addEventListener('click', () => {
 const btnDownload = document.querySelector('#btn-download');
 
 btnDownload.addEventListener('click', () => {
-  window.open("https://1drv.ms/b/s!AsSMjUrLYm65n75X5t0Jx-V-WBODAA?e=RSOWsy");
+  window.open("https://1drv.ms/b/s!AsSMjUrLYm65n8xAF4dK9Nn3ChUniQ?e=Tupk4X");
 });
 
 
