@@ -19,7 +19,7 @@ iconResponsiveMenu.addEventListener('click', () => {
 const btnDownload = document.querySelector('#btn-download');
 
 btnDownload.addEventListener('click', () => {
-  window.open("https://1drv.ms/b/s!AsSMjUrLYm65n8xAF4dK9Nn3ChUniQ?e=Tupk4X");
+  window.open("https://1drv.ms/b/s!AsSMjUrLYm65n9pWdDHDcXwLzt6zGg?e=Cu5Wwu");
 });
 
 
@@ -52,10 +52,15 @@ btnTools.addEventListener('click', () => {
 
 //Project actions
 
-const btnBlackJack = document.querySelector('#blackjack-project');
+const btnBlackJack = document.querySelector('#blackjack-project'),
+      btnRockPaperScissors = document.querySelector('#rockPaperScissors-project');
 
 btnBlackJack.addEventListener('click', () => {
   window.open('https://giomm2.github.io/blackjack/');
+});
+
+btnRockPaperScissors.addEventListener('click', () => {
+  window.open('https://giomm2.github.io/rockpaperscissor/');
 });
 
 
