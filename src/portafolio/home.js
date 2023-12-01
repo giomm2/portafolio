@@ -53,7 +53,8 @@ btnTools.addEventListener('click', () => {
 //Project actions
 
 const btnBlackJack = document.querySelector('#blackjack-project'),
-      btnRockPaperScissors = document.querySelector('#rockPaperScissors-project');
+      btnRockPaperScissors = document.querySelector('#rockPaperScissors-project'),
+      pokedex = document.querySelector('#pokedex-project');
 
 btnBlackJack.addEventListener('click', () => {
   window.open('https://giomm2.github.io/blackjack/');
@@ -61,6 +62,10 @@ btnBlackJack.addEventListener('click', () => {
 
 btnRockPaperScissors.addEventListener('click', () => {
   window.open('https://giomm2.github.io/rockpaperscissor/');
+});
+
+pokedex.addEventListener('click', () => {
+  window.open('https://giomm2.github.io/pokedex/');
 });
 
 
